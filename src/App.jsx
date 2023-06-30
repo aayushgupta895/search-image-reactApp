@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ShowLargeImg from './components/showLargeImg'
+import {  Routes, Route } from 'react-router-dom'
+import ShowLargeImg from './components/ShowLargeImg'
 import Home from './pages/Home'
 import { ContextProvider } from './hooks/ContextProvider'
 
@@ -16,7 +16,7 @@ function App() {
     <>
       <ContextProvider>
         <Routes>
-          <Route  path='/' element={<Home setInd={setInd} setLargeImg={setLargeImg}/>}/>
+          <Route  exact path='/' element={<Home setInd={setInd} setLargeImg={setLargeImg}/>}/>
           <Route exact path='/large-image' element={<ShowLargeImg largeImgPath={largeImg[ind]}/>}/>
         </Routes>
       </ContextProvider>
