@@ -3,7 +3,6 @@ import '../styles/style.css'
 import {Link} from 'react-router-dom'
 function ShowResult(props) {
   const showlargePhoto = (ind) =>{
-    // console.log(ind)
     props.setInd(ind)
   }
   return (

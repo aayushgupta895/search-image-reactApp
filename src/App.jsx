@@ -10,13 +10,7 @@ function App() {
   
   const [ind, setInd] = useState(0) 
   const [largeImg, setLargeImg] = useState([])
-  // const [largeImgArr, setLargeImgArr] = useState([]) 
-  
-  const apiKey = import.meta.env.VITE_API_KEY
 
-  // const [imageUrl, setImageUrl] = useState('')
-  
-  
 
   return (
     <>
