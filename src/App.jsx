@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ShowLargeImg from './components/showLargeImg'
+import ShowLargeImg from './components/ShowLargeImg'
 import Home from './pages/Home'
 import { ContextProvider } from './hooks/ContextProvider'
 
